@@ -16,7 +16,7 @@
         "G21": "MILLIMETER UNITS: Set Units to Millimeters.",
         "G26": "MESH VALIDATION PATTERN: Test the mesh and adjust.",
         "G27": "PARK TOOLHEAD: Park the current toolhead",
-        "G28": "AUTO HOME: Auto home one or more axes.",
+        "G28": "AUTO HOME: Auto home one or more axes.\n\nUsage: `G28 X | Y | Z` to home specific axes, or `G28` to home all axes.",
         "G29": "BED LEVELING: Probe the bed and enable leveling compensation",
         "G30": "SINGLE Z-PROBE: Probe bed at current XY location",
         "G31": "DOCK SLED: Dock the Z probe sled.",
