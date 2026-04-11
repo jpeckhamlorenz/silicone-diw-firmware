@@ -171,7 +171,7 @@
         "M410": "QUICKSTOP: Stop all steppers instantly",
         "M412": "FILAMENT RUNOUT: Enable / disable filament runout detection",
         "M413": "POWER-LOSS RECOVERY: Enable / disable power-loss recovery",
-        "M420": "BED LEVELING STATE: Get and/or set bed leveling state and parameters",
+        "M420": "BED LEVELING STATE: Get and/or set bed leveling state and parameters.\n\nUsage: `M420 C<bool> L<int> S<bool> T<0|1|4> V<book> Z<linear>`\n\n`C`: Center the mesh on the mean of the lowest and highest points\n\n`L`: Load mesh from EEPROM index\n\n`S`: Set enabled or disabled. A valid mesh is required to enable bed leveling.\n\n`T`: Format to print the mesh data. `T0` is human readable, `T1` is CSV, and `T4` is compact form.\n\n`V`: Verbose: Print the stored mesh / matrix data.\n\n`Z`: Set Z fade height (reduce bed leveling compensation close to the height and disable compensation above it).",
         "M421": "SET MESH VALUE: Set a single mesh Z height",
         "M422": "SET Z MOTOR XY: Set a Z motor position for G34 Auto-Alignment",
         "M425": "BACKLASH COMPENSATION: Enable and tune backlash compensation",
