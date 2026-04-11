@@ -1,7 +1,7 @@
 {
     "gcode.definitions": {
-        "G0": "RAPID: Rapid linear movement. \n\nUsage: `G0 X<value> Y<value> Z<value> E<value> F<value>`\n\n`F` specifies the feed rate (speed) of the movement.\n\nFor 3D printing, `E` specifies the amount of filament to extrude.",
-        "G1": "FEED: Linear movement. \n\nUsage: `G1 X<value> Y<value> Z<value> E<value> F<value>`\n\n`F` specifies the feed rate (speed) of the movement.\n\nFor 3D printing, `E` specifies the amount of filament to extrude.",
+        "G0": "RAPID: Rapid linear movement. \n\nUsage: `G0 X<value> Y<value> Z<value> E<value> F<value>`\n\n`F` specifies the feed rate (speed, current units per minute) of the movement.\n\nFor 3D printing, `E` specifies the amount of filament to extrude.",
+        "G1": "FEED: Linear movement. \n\nUsage: `G1 X<value> Y<value> Z<value> E<value> F<value>`\n\n`F` specifies the feed rate (speed, current units per minute) of the movement.\n\nFor 3D printing, `E` specifies the amount of filament to extrude.",
         "G2": "Feed, circular interpolation, clockwise",
         "G3": "Feed, circular interpolation, counter-clockwise",
         "G4": "DWELL: Pause the planner",
