@@ -1,9 +1,9 @@
 {
     "gcode.definitions": {
-        "G0": "RAPID: Rapid linear movement. \n\nUsage: `G0 X<value> Y<value> Z<value> E<value> F<value>`\n\n`F` specifies the feed rate (speed, current units per minute) of the movement.\n\nFor 3D printing, `E` specifies the amount of filament to extrude.",
-        "G1": "FEED: Linear movement. \n\nUsage: `G1 X<value> Y<value> Z<value> E<value> F<value>`\n\n`F` specifies the feed rate (speed, current units per minute) of the movement.\n\nFor 3D printing, `E` specifies the amount of filament to extrude.",
-        "G2": "Feed, circular interpolation, clockwise",
-        "G3": "Feed, circular interpolation, counter-clockwise",
+        "G0": "RAPID: Rapid linear movement. \n\nUsage: `G0 X<pos> Y<pos> Z<pos> E<pos> F<rate>`\n\n`F` specifies the feed rate (speed, current units per minute) of the movement.\n\nFor 3D printing, `E` specifies the amount of filament to extrude.",
+        "G1": "FEED: Linear movement. \n\nUsage: `G1 X<pos> Y<pos> Z<pos> E<pos> F<rate>`\n\n`F` specifies the feed rate (speed, current units per minute) of the movement.\n\nFor 3D printing, `E` specifies the amount of filament to extrude.",
+        "G2": "FEED: Circular interpolation, clockwise",
+        "G3": "FEED: Circular interpolation, counter-clockwise",
         "G4": "DWELL: Pause the planner",
         "G5": "BÉZIER CUBIC SPLINE: Cubic B-spline with XYZE destination and IJPQ offsets",
         "G10": "RETRACT: Retract the filament",
@@ -16,7 +16,7 @@
         "G21": "MILLIMETER UNITS: Set Units to Millimeters.",
         "G26": "MESH VALIDATION PATTERN: Test the mesh and adjust.",
         "G27": "PARK TOOLHEAD: Park the current toolhead",
-        "G28": "AUTO HOME: Auto home one or more axes.\n\nUsage: `G28 X | Y | Z` to home specific axes, or `G28` to home all axes.",
+        "G28": "AUTO HOME: Auto home one or more axes.\n\nUsage: `G28 L<bool> X Y Z`\n\n`L` is a flag to restore bed leveling state after homing, default true.\n\n`X`, `Y`, and `Z` are flags to home specific axes, or omit all to home all axes.",
         "G29": "BED LEVELING: Probe the bed and enable leveling compensation",
         "G30": "SINGLE Z-PROBE: Probe bed at current XY location",
         "G31": "DOCK SLED: Dock the Z probe sled.",
