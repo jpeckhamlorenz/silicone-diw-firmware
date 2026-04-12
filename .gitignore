@@ -1,2 +1,5 @@
 # PlatformIO build files
 */.pio
+
+# Local settings
+"firmware v12"/.vscode
