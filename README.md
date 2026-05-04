@@ -10,7 +10,7 @@ This part is the settings information for the hardware and software firmware use
 
 | Item | Name (with Link) | Note |
 | ---- | ---- | ---- |
-| main board | [RAMBo 1.4](https://ultimachine.com/products/rambo-1-4) | belongs to [Arduino AVR](https://www.arduino.cc/) platform, with ATmega MCU |
+| main board | [RAMBo 1.3](https://ultimachine.com/products/rambo-1-3) | belongs to [Arduino AVR](https://www.arduino.cc/) platform, with ATmega MCU |
 | motor drivers | [A4988](https://www.handsontec.com/dataspecs/module/A4988.pdf) | added via breakout boards |
 | XY stepper | [NEMA 23](https://www.lamtechnologies.com/Product.aspx?lng=EN&idp=stpmtrn23) | |
 | Z stepper | [NEMA 34](https://www.lamtechnologies.com/Product.aspx?lng=EN&idp=stpmtrn34) | |
