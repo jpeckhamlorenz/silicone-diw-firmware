@@ -35,7 +35,7 @@ void setup() {
 void loop() {
   int valuesInflated[numChannel] = {0};
   for (int i = 0; i < numChannel; ++i) {
-    valuesInflated[i] = analogRead(channels[i]) * 10;
+    valuesInflated[i] = analogRead(channels[i]) * 10;   // use inflated int instead of float for faster serial transmission
   }
   for (int i = 0; i < numChannel; ++i) {
     Serial.print("Ch");
