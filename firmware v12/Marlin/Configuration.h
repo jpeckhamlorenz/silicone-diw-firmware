@@ -2193,12 +2193,14 @@
 //
 // Note: Usually sold with a white PCB.
 //
-#define REPRAP_DISCOUNT_SMART_CONTROLLER
+// #define REPRAP_DISCOUNT_SMART_CONTROLLER
 
-//not sure what this does - James Lorenz (looks like it has to do with LCD Screen - William van den Bogert)
-#define ST7920_DELAY_1 DELAY_NS(0)
-#define ST7920_DELAY_2 DELAY_NS(400)
-#define ST7920_DELAY_3 DELAY_NS(0)
+// Chengrui Wu: This seems not to be the LCD we are using. Instead, refer to REPRAP_DISCOUNT_FULL_GRAPHIC_SMART_CONTROLLER below.
+
+// //not sure what this does - James Lorenz (looks like it has to do with LCD Screen - William van den Bogert)
+// #define ST7920_DELAY_1 DELAY_NS(0)
+// #define ST7920_DELAY_2 DELAY_NS(400)
+// #define ST7920_DELAY_3 DELAY_NS(0)
 
 //
 // GT2560 (YHCB2004) LCD Display
@@ -2356,7 +2358,7 @@
 // RepRapDiscount FULL GRAPHIC Smart Controller
 // https://reprap.org/wiki/RepRapDiscount_Full_Graphic_Smart_Controller
 //
-//#define REPRAP_DISCOUNT_FULL_GRAPHIC_SMART_CONTROLLER
+#define REPRAP_DISCOUNT_FULL_GRAPHIC_SMART_CONTROLLER
 
 //
 // K.3D Full Graphic Smart Controller
