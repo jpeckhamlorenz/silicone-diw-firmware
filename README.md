@@ -29,9 +29,27 @@ Some additional notes on the hardware:
 
 All the code and configuration files for Marlin firmware are in the **[`firmware v12`](./firmware%20v12/)** folder, which is based on **Marlin 2.0.9.1** with some customization for our printer and silicone material.
 
-For usage, after cloning the repo or downloading the [`firmware v12`](./firmware%20v12/) folder, **upload [`Marlin.ino`](./firmware%20v12/Marlin/Marlin.ino) to the main board via Arduino IDE** (this will automatically solve dependencies and build necessary files).
+For usage, after cloning the repo or downloading the [`firmware v12`](./firmware%20v12/) folder, proceed with one of the following workflows:
+
+#### Arduino IDE Workflow
+
+**Upload [`Marlin.ino`](./firmware%20v12/Marlin/Marlin.ino) to the main board via Arduino IDE** (this will automatically solve dependencies and build necessary files).
 
 > According to [James](https://github.com/jpeckhamlorenz), direct flashing via Arduino IDE was workable back in 2022, but **support for modern Arduino IDE and modern Marlin is not guaranteed**.
+
+:exclamation: Before compilation, do check the following dependencies:
+
+- **RAMBo USB Driver:** The USB driver on laptop, so that the RAMBo board can be recognized. Go to <https://reprap.org/wiki/File:RAMBo_USBdriver.zip> to download necessary files, and after unzipping, **right click on `RAMBo.inf` and click "Install"** [^RAMBo_USB_Driver].
+- **Arduino Addon:** This is needed for extended features like **LCD Display**. In Arduino IDE, navigate to "File" - "Preferences" in menu, and add <https://raw.githubusercontent.com/ultimachine/ArduinoAddons/master/package_ultimachine_index.json> to **"Additional board manager URLs"**. Then navigate to board manager on the left sidebar, search for "RAMBo" and install.
+- **Additional Libraries:** **Select "RAMBo" for board type** and try to compile. Resolve all errors by installing additional libraries.
+
+[^RAMBo_USB_Driver]: Refer to Page 11 of <https://download.lulzbot.com/TAZ/6.0/production_parts/electronics/RAMBo/docs/RAMBo-1.1b-user-manual.pdf> for details.
+
+#### PlatformIO Workflow
+
+Install official PlatformIO extension inside VSCode. Then **open `firmware v12` as a new project** (`firmware v12` should be the **root folder** of opened workspace). Open [`platformio.ini`](./firmware%20v12/platformio.ini) and let the extension resolve all dependencies. Then click "Build" button to compile, "Port" to select board port, and "Upload" to upload firmware.
+
+Similar to [Arduino IDE workflow](#arduino-ide-workflow), the RAMBo USB driver may be needed for the system to recognize the RAMBo board. But there should be no other dependencies if there is no error during build process. Otherwise, resolve **all errors and desirably all warnings** during build.
 
 ### Klipper
 
