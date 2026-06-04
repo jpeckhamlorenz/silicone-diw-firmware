@@ -33,6 +33,14 @@ For usage, after cloning the repo or downloading the [`firmware v12`](./firmware
 
 > According to [James](https://github.com/jpeckhamlorenz), direct flashing via Arduino IDE was workable back in 2022, but **support for modern Arduino IDE and modern Marlin is not guaranteed**.
 
+:exclamation: Before compilation, do check the following dependencies:
+
+- **RAMBo USB Driver:** The USB driver on laptop, so that the RAMBo board can be recognized. Go to <https://reprap.org/wiki/File:RAMBo_USBdriver.zip> to download necessary files, and after unzipping, **right click on `RAMBo.inf` and click "Install"** [^RAMBo_USB_Driver].
+- **Arduino Addon:** This is needed for extended features like **LCD Display**. In Arduino IDE, navigate to "File" - "Preferences" in menu, and add <https://raw.githubusercontent.com/ultimachine/ArduinoAddons/master/package_ultimachine_index.json> to **"Additional board manager URLs"**. Then navigate to board manager on the left sidebar, search for "RAMBo" and install.
+- **Additional Libraries:** **Select "RAMBo" for board type** and try to compile. Resolve all errors by installing additional libraries.
+
+[^RAMBo_USB_Driver]: Refer to Page 11 of <https://download.lulzbot.com/TAZ/6.0/production_parts/electronics/RAMBo/docs/RAMBo-1.1b-user-manual.pdf> for details.
+
 ### Klipper
 
 :hourglass_flowing_sand: We are still figuring out the configuration of Klipper. Version and dependencies info as well as usage will be updated once the configuration is finalized.
