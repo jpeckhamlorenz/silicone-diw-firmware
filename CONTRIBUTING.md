@@ -10,7 +10,6 @@ The following content is for potential contributors or developers of the project
 - **Development branches**: Branches for new features, optimizations, refactors and other code changes
   - `dev/Marlin`: Potential edits to existing Marlin firmware
   - `dev/Klipper`: Development of Klipper firmware
-  - `dev/G-Code_VSCode_Config`: Development of necessary settings for VScode G-Code IntelliSense extensions. Details will be given in [`.vscode`](./.vscode) folder.
 - **Test branches**: Branches used for testing (like writing testcases, etc.) for corresponding development branches
   - `test/Marlin`: Potential tests for potential edits on `dev/Marlin`
   - `test/Klipper`: Tests for edits on `dev/Klipper`
